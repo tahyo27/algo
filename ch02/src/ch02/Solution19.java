@@ -1,0 +1,19 @@
+package ch02;
+
+//µÎ¼öÀÇ ³ª´°¼À
+public class Solution19 {
+	 public static int solution(int num1, int num2) {
+	        float result = (float)num1 / num2;
+	        int answer = (int)(result * 1000);
+	        System.out.println("result" + result);
+	        System.out.println("answer" + answer);
+	        return 1;
+	    }
+
+	public static void main(String[] args) {
+		
+		System.out.println(Solution19.solution(3, 2));
+	}
+}
+
+

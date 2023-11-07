@@ -1,0 +1,18 @@
+package ch02;
+
+import java.util.ArrayList;
+import java.util.List;
+//µÎ¼öÀÇ ³ª´°¼À
+public class Solution19 {
+	 public static int solution(int num1, int num2) {
+	        int result = (int)(num1 / (double)num2) * 1000;
+	        return result;
+	    }
+
+	public static void main(String[] args) {
+		
+		System.out.println();
+	}
+}
+
+

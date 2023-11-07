@@ -1,0 +1,38 @@
+package ch02;
+
+import java.util.HashMap;
+import java.util.Map;
+
+//µÎ¼öÀÇ ³ª´°¼À
+public class Solution21 {
+	 public static int solution(int[] array) {
+	        Map<Integer, Integer> mp = new HashMap<>();
+	        int key = 0;
+	        int max = 0;
+	        for(int num : array) {
+	            mp.put(num, mp.getOrDefault(num, 0) + 1);
+	        }
+	        
+	        for(Map.Entry<Integer, Integer> entry : mp.entrySet()) {
+	            if(entry.getValue() > max) {
+	                max = entry.getValue();
+	                System.out.println("¹ë·ù°ª Âï¾î³»±â " + max);
+	                key = entry.getKey();
+	                System.out.println("ÀÌÇÁ¹® Ã³À½ max°ª: " + max);
+	            } else if (max == entry.getValue()) {
+	            	key = -1;   
+	            	System.out.println("¸Æ½º¶û °°À»¶§ Å°°ª");
+	            }
+	        }
+	        
+	        return key;
+	    }
+	 
+
+	public static void main(String[] args) {
+		int array[] = {1, 2, 3, 3, 3, 4};
+		System.out.println(solution(array));
+	}
+}
+
+
