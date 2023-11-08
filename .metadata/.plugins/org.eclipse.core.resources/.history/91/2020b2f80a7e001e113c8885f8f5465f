@@ -12,28 +12,28 @@ N명의 학생의 시험 점수를 바탕으로 등수 부여하고자 한다. 각 학생의 등수는 자신보�
 배열을 return 하도록 solution함수를 완성해주세요*/
 public class Solution {
 	 public int[] calculateRank(int[] grade) {
-		 	int n = grade.length;
+		 int n = grade.length;
 	        if (n == 0) {
 	            return new int[0];
 	        }
 
-	        int maxScore = Arrays.stream(grade).max().getAsInt(); //최대 스코어 찾음
-	        int[] counts = new int[maxScore + 1]; //맥스스코어까지 초기화하고 그레이드에 그 점수 있으면 카운트함
+	        int maxScore = Arrays.stream(grade).max().getAsInt();
+	        int[] counts = new int[maxScore + 1];
 	        for (int i = 0; i < n; i++) {
 	            counts[grade[i]]++;
 	        }
 
-	        int[] ranks = new int[maxScore + 1]; // 랭크 구하기
+	        int[] ranks = new int[maxScore + 1];
 	        int rank = 1;
 	        for (int i = maxScore; i >= 0; i--) {
-	            if (counts[i] > 0) { //맥스스코어부터 등수 처리 값이 존재하면 넣고 동점자 수만큼 랭크 뒤로 밀기
+	            if (counts[i] > 0) {
 	                ranks[i] = rank;
 	                rank += counts[i];
 	            }
 	        }
 
 	        int[] result = new int[n];
-	        for (int i = 0; i < n; i++) { //결과값 
+	        for (int i = 0; i < n; i++) {
 	            result[i] = ranks[grade[i]];
 	        }
 

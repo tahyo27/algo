@@ -1,5 +1,10 @@
 package ch02;
 
+/*아래 3가지 유형 중 한 가지에 맞춰 휴대폰 번호를 입력받으려고한다
+X는 0~9의 숫자중 하나
+유형 1 : 010-XXXX-XXXX
+유형 2 : 010XXXXXXXX
+유형3 : +82-10-XXXX-XXXX*/
 public class Solution2 {
 	 public int getPhoneNumberType(String phone_number) {
 	        if (phone_number.matches("010-\\d{4}-\\d{4}")) {
