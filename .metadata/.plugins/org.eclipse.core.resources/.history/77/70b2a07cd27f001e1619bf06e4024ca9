@@ -1,0 +1,23 @@
+package ch02;
+
+import java.util.HashMap;
+import java.util.Map;
+
+//µÎ¼öÀÇ ³ª´°¼À
+public class Solution22 {
+	 public static int solution(long n) {
+	        String st = "" + n;
+	        System.out.println(st);
+	        int[] answer = new int[st.length()];
+	        for(int i = 0; i < st.length(); i++) {
+	            answer[i] = Character.getNumericValue(st.charAt(st.length()-i-1));
+	        }
+	        return answer;
+	    }
+	 
+
+	public static void main(String[] args) {
+			}
+}
+
+
