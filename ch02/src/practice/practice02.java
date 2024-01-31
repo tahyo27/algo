@@ -3,8 +3,9 @@ package practice;
 import java.util.Scanner;
 
 /**
- * @author tahyo2
+ * 
  * @Date 2024. 1. 9.
+ * 10진법에서 2진법 8진법 16진법 변환 반대도
  */
 public class practice02 {
 
