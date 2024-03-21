@@ -21,7 +21,7 @@ s은 영어 소문자로만 이루어져 있습니다.*/
 import java.util.HashMap;
 import java.util.Map;
 
-public class algo5 {
+public class Algo5 {
 
 	public static void main(String[] args) {
 		String s = "banana";

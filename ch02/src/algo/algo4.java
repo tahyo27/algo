@@ -9,7 +9,7 @@ package algo;
 //s는 알파벳 소문자, 대문자, 공백으로만 이루어져 있습니다.
 //s의 길이는 8000이하입니다.
 //n은 1 이상, 25이하인 자연수입니다.
-public class algo4 {
+public class Algo4 {
 
 	public static void main(String[] args) {
 		String s = "e F d";

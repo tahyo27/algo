@@ -22,7 +22,7 @@ package algo;
 //w는 명함의 가로 길이를 나타냅니다.
 //h는 명함의 세로 길이를 나타냅니다.
 //w와 h는 1 이상 1,000 이하인 자연수입니다.
-public class algo3 {
+public class Algo3 {
 
 	public static void main(String[] args) {
 		int[][] sizes = {{60,50},{30,70},{60,30},{80,40}};

@@ -15,7 +15,7 @@ package algo;
 ////-1,000 ≤ number의 각 원소 ≤ 1,000
 ////서로 다른 학생의 정수 번호가 같을 수 있습니다.
 
-public class algo2 {
+public class Algo2 {
 
 	public static void main(String[] args) {
 		int[] number = {-2, 3, 0, 2, -5};

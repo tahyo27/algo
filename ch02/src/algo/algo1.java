@@ -11,7 +11,7 @@ package algo;
 //p의 길이 ≤ t의 길이 ≤ 10,000
 //t와 p는 숫자로만 이루어진 문자열이며, 0으로 시작하지 않습니다.
 //18자리면 int 자리 초과해서 롱으로 바꿔줘야함
-public class algo1 {
+public class Algo1 {
 
 	public static void main(String[] args) {
 		String t = "3141592";
